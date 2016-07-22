@@ -43,16 +43,16 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
 
 
-<meta name="description" content="那么作为一只野生的iOS初级狗，可能就这样鲁莽地开始写第一篇blog了，在这里不出意外地话会不定期出现一些干货、想法、学习笔记、图片等。这些天也一直在搜罗关于「入门iOS的Online资源」的一个集合（会持续补充）。还是不得不感慨开源的伟大，如此多的大神，不分国籍，不分年龄，不分男女，日日夜夜夜夜日日，为这个生态作出着那么多无私且卓越的贡献。「天生骄傲」若从这些人的口中说出便是最恰当不过的了。">
+<meta name="description" content="UIView的常用属性及方法|UIImageView 3种填充属性的不同">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Useful websites learning iOS">
-<meta property="og:url" content="http://yoursite.com/2016/01/21/hello-world/index.html">
+<meta property="og:title" content="UIView UIImageView">
+<meta property="og:url" content="http://yoursite.com/2016/07/22/UIView-UIImageView/index.html">
 <meta property="og:site_name" content="mingsquall">
-<meta property="og:description" content="那么作为一只野生的iOS初级狗，可能就这样鲁莽地开始写第一篇blog了，在这里不出意外地话会不定期出现一些干货、想法、学习笔记、图片等。这些天也一直在搜罗关于「入门iOS的Online资源」的一个集合（会持续补充）。还是不得不感慨开源的伟大，如此多的大神，不分国籍，不分年龄，不分男女，日日夜夜夜夜日日，为这个生态作出着那么多无私且卓越的贡献。「天生骄傲」若从这些人的口中说出便是最恰当不过的了。">
-<meta property="og:updated_time" content="2016-01-20T16:16:32.000Z">
+<meta property="og:description" content="UIView的常用属性及方法|UIImageView 3种填充属性的不同">
+<meta property="og:updated_time" content="2016-07-22T06:31:09.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Useful websites learning iOS">
-<meta name="twitter:description" content="那么作为一只野生的iOS初级狗，可能就这样鲁莽地开始写第一篇blog了，在这里不出意外地话会不定期出现一些干货、想法、学习笔记、图片等。这些天也一直在搜罗关于「入门iOS的Online资源」的一个集合（会持续补充）。还是不得不感慨开源的伟大，如此多的大神，不分国籍，不分年龄，不分男女，日日夜夜夜夜日日，为这个生态作出着那么多无私且卓越的贡献。「天生骄傲」若从这些人的口中说出便是最恰当不过的了。">
+<meta name="twitter:title" content="UIView UIImageView">
+<meta name="twitter:description" content="UIView的常用属性及方法|UIImageView 3种填充属性的不同">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -64,7 +64,7 @@
 
 
 
-  <title> Useful websites learning iOS | mingsquall </title>
+  <title> UIView UIImageView | mingsquall </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -199,7 +199,7 @@
             
             
               
-                Useful websites learning iOS
+                UIView UIImageView
               
             
           </h1>
@@ -208,8 +208,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2016-01-21T00:16:33+08:00" content="2016-01-21">
-              2016-01-21
+            <time itemprop="dateCreated" datetime="2016-07-22T12:45:17+08:00" content="2016-07-22">
+              2016-07-22
             </time>
           </span>
 
@@ -218,8 +218,8 @@
               &nbsp; | &nbsp; 分类于
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/iOS-learning-resources/" itemprop="url" rel="index">
-                    <span itemprop="name">iOS learning resources</span>
+                  <a href="/categories/iOS学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">iOS学习笔记</span>
                   </a>
                 </span>
 
@@ -234,8 +234,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/01/21/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/21/hello-world/" itemprop="commentsCount"></span>
+                <a href="/2016/07/22/UIView-UIImageView/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/22/UIView-UIImageView/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -254,20 +254,151 @@
       
 
       
-        <span itemprop="articleBody"><p>那么作为一只野生的iOS初级狗，可能就这样鲁莽地开始写第一篇blog了，在这里不出意外地话会不定期出现一些干货、想法、学习笔记、图片等。这些天也一直在搜罗关于「入门iOS的Online资源」的一个集合（会持续补充）。还是不得不感慨开源的伟大，如此多的大神，不分国籍，不分年龄，不分男女，日日夜夜夜夜日日，为这个生态作出着那么多无私且卓越的贡献。「天生骄傲」若从这些人的口中说出便是最恰当不过的了。<br><a id="more"></a></p>
-<blockquote class="blockquote-center"><p>Start learning iOS</p>
+        <span itemprop="articleBody"><p>UIView的常用属性及方法|UIImageView 3种填充属性的不同<br><a id="more"></a></p>
+<blockquote>
+<p><strong>UIView的常用属性</strong></p>
 </blockquote>
-<p><a href="https://www.youtube.com/watch?v=war0gHL26ns&amp;list=PL_4rJ_acBNMHa_RGZigG2nQI3aL1kTa4r" target="_blank" rel="external">Introduce「Swift」from making a small 「To-do list」demo first</a><br><em>must use VPN first..</em></p>
-<p><a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/" target="_blank" rel="external">Official Apple Document- 「Swift」</a></p>
-<p><a href="https://medium.com/" target="_blank" rel="external">Medium - share stories - you can search for developer’s iOS stories</a></p>
-<p><a href="http://stackoverflow.com/" target="_blank" rel="external">Have Trouble?Find solution from this WebSite called 「stack flow」</a><br><em>better than the fucking Baidu..</em></p>
-<p><a href="http://v.qq.com/vplus/f42e34e23611e1b7a25e9827b38c171e" target="_blank" rel="external">Kevin’s video tutorials for his Girlfriend learning iOS</a><br><em>In order to study more about this course,we can buy his book called “Producer “(version1.7)</em></p>
-<p><a href="http://swifter.tips/" target="_blank" rel="external">Swifter’s important Tips</a><br><em>update every wednesday</em></p>
-<p><a href="https://github.com/timmy3131/30min_guides/blob/master/ios.md" target="_blank" rel="external">Quick start 「60min」 encounter with iOS</a><br><em>switch from Java/C/PHP/Javascript is easier to understand</em></p>
-<p>Chinese iOS online courses<br><a href="http://www.jikexueyuan.com/" target="_blank" rel="external">极客学院</a><br><a href="http://study.163.com/" target="_blank" rel="external">网易云课堂</a><br><a href="http://www.imooc.com/" target="_blank" rel="external">慕课网</a><br>…</p>
-<p><a href="http://www.pomo.tv/" target="_blank" rel="external">A Collection of Videos about「Mac|iOS|Swift」</a></p>
-<p><a href="http://www.appcoda.com/tutorials/ios/" target="_blank" rel="external">AppCoda| step-by-step iOS programming tutorials</a></p>
-<p><em>Not limited to the above..Ranking regardless..</em></p>
+<ol>
+<li><p>frame</p>
+<pre><code>在父视图中的位置(参照点是父view坐标系统)
+</code></pre></li>
+<li><p>bounds</p>
+<pre><code>该view在本坐标系统中的位置和大小（参照点是本地坐标系统）     
+一般控件的bounds和frame.size的尺寸是一样的
+</code></pre></li>
+<li><p>center</p>
+<pre><code>控件的中心点坐标
+</code></pre></li>
+<li><p>UIViewContentModel </p>
+<pre><code>UIViewContentModeScaleToFill      缩放内容到合适比例大小
+UIViewContentModeScaleAspectFit   缩放内容到合适的大小，边界多余部分透明
+UIViewContentModeScaleAspectFill  缩放内容填充到指定大小，边界多余的部分省略
+UIViewContentModeRedraw           重绘视图边界
+UIViewContentModeCenter           视图保持等比缩放
+UIViewContentModeTop              视图顶部对齐
+UIViewContentModeBottom           视图底部对齐
+UIViewContentModeLeft             视图左侧对齐
+UIViewContentModeRight            视图右侧对齐
+UIViewContentModeTopLeft          视图左上角对齐
+UIViewContentModeTopRight         视图右上角对齐
+UIViewContentModeBottomLeft       视图左下角对齐
+UIViewContentModeBottomRight      视图右下角对齐
+</code></pre></li>
+<li><p>小属性</p>
+<pre><code>hidden  隐藏视图
+alpha   透明度（0~1）
+opaque  不透明度 （0~1）
+userInteractionEnabled 交互
+multipleTouchEnabled   支持多点触控
+exclusiveTouch         决定当前视图是否处理出门事件的唯一对象 
+</code></pre></li>
+<li><p>etc</p>
+<pre><code>subviews                     当前视图的所有子视图（获取子视图）
+superview                    当前视图的父视图（获取父视图）
+tag                          当前视图标签,NSInteger类型
+transform                    视图仿射变换,CGAffineTransform类型
+                             CGAffineTransformMakeScale(CGFloat sx, CGFloat sy)缩放比例
+userInteractionEnabled       决定与用户交互事件是否从被忽略并从事件队列中移除
+windows                      当前视图上的UIWindow类型,可获取所在窗口对象
+</code></pre></li>
+<li><p>常用控件</p>
+<pre><code>UIButton 按钮
+UILabel 文本标签
+UITextField 文本输入框
+UIImageView 图片显示
+UIScrollView 滚动的控件
+UITableView 表格表格
+UICollectionView 九宫格
+UIWebView 网页显示控件
+UIAlertView 对话框(中间弹框)
+UINavigationBar 导航条
+</code></pre></li>
+</ol>
+<blockquote>
+<p><strong>UIView的常用方法</strong></p>
+</blockquote>
+<ol>
+<li><p>创建方法</p>
+<pre><code>UIView *view = [[UIView alloc] initWithFrame:frame];    
+frame = CGRectMake(origini.x, origin.y, size.width, size.height);
+</code></pre></li>
+<li><p>添加视图/插入视图</p>
+<pre><code>[view addSubview:subview]
+在view上添加subview视图
+当在view上添加多个子视图时,先添加的在下面,后添加的在上面
+</code></pre><p><em>使用以下方法调整子控件在subview数组中的顺序</em></p>
+<pre><code>// 将子控件view插入到subviews数组的index位置
+- (void)insertSubview:(UIView *)view atIndex:(NSInteger)index;
+
+// 将子控件subview1显示到子控件subview的下面
+- (void)insertSubview:(UIView *)subview1 belowSubview:(UIView *)subview;
+
+// 将子控件subview1显示到子控件subview的上面
+- (void)insertSubview:(UIView *)subview1 aboveSubview:(UIView *)subview;
+
+// 将子控件view放到数组的最后面，显示在最上面
+- (void)bringSubviewToFront:(UIView *)view;
+
+// 将子控件view放到数组的最前面，显示在最下面
+- (void)sendSubviewToBack:(UIView *)view;
+</code></pre></li>
+<li><p>删除视图</p>
+<pre><code>[subview removeFromSuperview]   
+子视图从父视图上删除,注意不能通过父视图删除子视图,只能子视图将自己在父视图上删去
+</code></pre></li>
+<li><p>获取视图对象</p>
+<pre><code>[view viewWithTag:t] 获取view的子视图中标识为t的子视图对象
+</code></pre></li>
+</ol>
+<blockquote>
+<p><strong>UIImageView 3种填充属性的不同</strong></p>
+</blockquote>
+<ul>
+<li><p><strong>创建</strong></p>
+<pre><code>//创建UIImageView对象
+UIImageView *image =[[UIImageView alloc] 
+initWithframe:CGRectMake(0,0,100,100)];
+
+//指定图片
+[image setImage:[UIImage imageNamed:@&quot;1.jpg&quot;]];
+
+//指定背景
+image.backgroundColor = [UIColor blueColor];
+
+//设置UIImageView的填充属性
+image.contentMode = UIViewContentModeScaleAspectFit;
+
+//添加到view
+[self.view addSubview:image];        
+</code></pre></li>
+</ul>
+<ul>
+<li><p><strong>三种属性</strong></p>
+</li>
+<li><p>UIViewContentModeScaleToFill</p>
+<pre><code>&gt; 会按照UIImageView的宽高比来拉伸图片
+&gt; 直到让整个图片都填充UIImageView为止
+&gt; 因为是按照UIImageView的宽高比来拉伸,所以图片会变形
+</code></pre></li>
+<li><p>UIViewContentModeScaleAspectFit</p>
+<pre><code>常常配合:clipsToBounds(将超出的图片部分裁剪掉)
+&gt; 会按照图片的宽高比来拉伸
+ &gt; 要求整张图片都必须在UIImageView的范围内
+ &gt; 并且宽度和高度其中一个必须和UIImageView一样
+ &gt; 居中显示
+</code></pre></li>
+<li><p>UIViewContentModeScaleAspectFill</p>
+<pre><code>&gt; 会按照图片的宽高比来拉伸
+ &gt; 要求整张图片必须填充UIImageView
+ &gt; 并且图片的宽度或者高度其中一个必须和UIImageView一样
+ &gt; 因为是按照图片的宽高比来拉伸, 所以图片不会变形
+</code></pre></li>
+<li><p>规律</p>
+<pre><code>&gt; 但凡取值中包含Scale单词的,都会对图片进行拉伸(缩放);
+ &gt; 但凡取值中没有出现Scale单词的,都不会对图片进行拉伸;
+ &gt; 但凡取值中包含Aspect单词的, 都会按照图片的宽高比来拉伸.
+</code></pre></li>
+</ul>
 </span>
       
     </div>
@@ -285,13 +416,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/01/20/day1/" rel="next" title="iOS学习笔记——关于表格">
+                <i class="fa fa-chevron-left"></i> iOS学习笔记——关于表格
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/02/05/day1/" rel="prev" title="iOS学习笔记——关于表格">
-                iOS学习笔记——关于表格 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -316,8 +447,8 @@
         
           <div class="comments" id="comments">
             
-              <div class="ds-thread" data-thread-key="2016/01/21/hello-world/"
-                   data-title="Useful websites learning iOS" data-url="http://yoursite.com/2016/01/21/hello-world/">
+              <div class="ds-thread" data-thread-key="2016/07/22/UIView-UIImageView/"
+                   data-title="UIView UIImageView" data-url="http://yoursite.com/2016/07/22/UIView-UIImageView/">
               </div>
             
           </div>
@@ -360,7 +491,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
